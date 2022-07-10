@@ -2,23 +2,22 @@ package com.coderscampus.Assignment10.dto;
 
 import java.util.List;
 
-
-
 public class Meal {
-	
-	private Integer Id;
+	private Integer id;
 	private String title;
 	private String image;
 	private List<String> imageUrls;
 	private Integer readyInMinutes;
 	private Integer servings;
-	
+	private String link;
+	private String cleanTitle;
+	private String imageType;
 	
 	public Integer getId() {
-		return Id;
+		return id;
 	}
 	public void setId(Integer id) {
-		Id = id;
+		this.id = id;
 	}
 	public String getTitle() {
 		return title;
@@ -50,11 +49,28 @@ public class Meal {
 	public void setServings(Integer servings) {
 		this.servings = servings;
 	}
+	public String getLink() {
+		return link;
+	}
+	public void setLink(String link) {
+		this.link = link;
+	}
+	public String getCleanTitle() {
+		return cleanTitle;
+	}
+	public void setCleanTitle(String cleanTitle) {
+		this.cleanTitle = cleanTitle;
+	}
+	public String getImageType() {
+		return imageType;
+	}
+	public void setImageType(String imageType) {
+		this.imageType = imageType;
+	}
 	@Override
 	public String toString() {
-		return "Meal [Id=" + Id + ", title=" + title + ", image=" + image + ", imageUrls=" + imageUrls
-				+ ", readyInMinutes=" + readyInMinutes + ", servings=" + servings + "]";
+		return "Meal [id=" + id + ", title=" + title + ", image=" + image + ", imageUrls=" + imageUrls
+				+ ", readyInMinutes=" + readyInMinutes + ", servings=" + servings + ", link=" + link + ", cleanTitle="
+				+ cleanTitle + ", imageType=" + imageType + "]";
 	}
-	
-
 }
