@@ -30,7 +30,7 @@ public class SpoonacularController {
 			String exclusions, String timeFrame, Class<?> responseClass) {
 		UriComponentsBuilder builder = UriComponentsBuilder.fromHttpUrl("https://api.spoonacular.com/mealplanner/generate")
 			    .queryParam("timeFrame", timeFrame)
-			    .queryParam("apiKey", "0bc24d758a394a66b203dbb0d029f4df");
+			    .queryParam("apiKey", "e71ca6b455764b6d905070e5c268269e");
 		if (StringUtils.hasText(numCalories)) {
 			builder = builder.queryParam("targetCalories", Integer.parseInt(numCalories));
 		}
