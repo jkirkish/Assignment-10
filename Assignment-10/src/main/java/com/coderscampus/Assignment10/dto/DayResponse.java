@@ -4,17 +4,22 @@ import java.util.List;
 
 public class DayResponse {
 	
-	private List<Meal> meal;
-	private Nutrients nutrients;
+	private List<Meal> meals;
+    private Nutrients nutrients;
 	
-	
-	public List<Meal> getMeal() {
-		return meal;
+	public List<Meal> getMeals() {
+		return meals;
 	}
 
-	public void setMeal(List<Meal> meal) {
-		this.meal = meal;
+	public void setMeals(List<Meal> meals) {
+		this.meals = meals;
 	}
+
+	@Override
+	public String toString() {
+		return "DayResponse [meals=" + meals + "]";
+	}
+
 	public Nutrients getNutrients() {
 		return nutrients;
 	}
@@ -22,10 +27,4 @@ public class DayResponse {
 	public void setNutrients(Nutrients nutrients) {
 		this.nutrients = nutrients;
 	}
-
-	@Override
-	public String toString() {
-		return "DayResponse [meal=" + meal + "]";
-	}
-
 }

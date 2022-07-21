@@ -3,11 +3,12 @@ package com.coderscampus.Assignment10.dto;
 import java.util.List;
 
 public class Meal {
+	
 	private Integer id;
 	private String title;
 	private String image;
 	private List<String> imageUrls;
-	private Integer readyInMinutes;
+	private Integer readyInMInutes;
 	private Integer servings;
 	private String link;
 	private String cleanTitle;
@@ -37,11 +38,11 @@ public class Meal {
 	public void setImageUrls(List<String> imageUrls) {
 		this.imageUrls = imageUrls;
 	}
-	public Integer getReadyInMinutes() {
-		return readyInMinutes;
+	public Integer getReadyInMInutes() {
+		return readyInMInutes;
 	}
-	public void setReadyInMinutes(Integer readyInMinutes) {
-		this.readyInMinutes = readyInMinutes;
+	public void setReadyInMInutes(Integer readyInMInutes) {
+		this.readyInMInutes = readyInMInutes;
 	}
 	public Integer getServings() {
 		return servings;
@@ -70,7 +71,9 @@ public class Meal {
 	@Override
 	public String toString() {
 		return "Meal [id=" + id + ", title=" + title + ", image=" + image + ", imageUrls=" + imageUrls
-				+ ", readyInMinutes=" + readyInMinutes + ", servings=" + servings + ", link=" + link + ", cleanTitle="
+				+ ", readyInMInutes=" + readyInMInutes + ", servings=" + servings + ", link=" + link + ", cleanTitle="
 				+ cleanTitle + ", imageType=" + imageType + "]";
 	}
+	
+
 }
